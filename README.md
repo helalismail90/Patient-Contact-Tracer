@@ -1,3 +1,4 @@
+
 # Patient Contact Tracer
 
 This project aims to help identifying and/or predicting a possible foci for covid-19. 
@@ -27,5 +28,29 @@ An API that takes a patients most visited locations as input [ home, work, gym. 
 ## Patient(s) Polygon 
 A CSV output file that can be feed into Kepler.gl generating a visualization [ Heat Map ] with patients hotspots and most frequently used routes.
 
+# Environment Setup
 
+## Install Ruby
+ Install Ruby Version Manager : [https://rvm.io/](https://rvm.io/)
+ Download a stable ruby version [ I'm using 2.5.1 ]
+
+## Install Jets
+Jets is The Ruby Serverless Framework.
+Jets allows you to create and deploy serverless services with ease. It includes everything you need to build an API and deploy it to AWS Lambda. Jets leverages the power of Ruby to make serverless joyful for everyone.
+Project : [https://rubyonjets.com/](https://rubyonjets.com/)
+Setup : [https://rubyonjets.com/quick-start/](https://rubyonjets.com/quick-start/)
+Github : [https://github.com/tongueroo/jets](https://github.com/tongueroo/jets)
+
+**The installation is pretty simple, upon installing ruby just run the following command**
+
+	$ gem install jets
+
+## Initializing Your Project Locally
+    $ cd <project-directory>
+    $ rake db:create
+    $ rake db:migrate
+    
+## Run Your Project
+    $ jets server
+The `jets server` command starts a server that mimics API Gateway so you can test locally on port `8888` 
 
