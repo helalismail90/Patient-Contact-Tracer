@@ -1,12 +1,16 @@
 class Api::Routes::RoutesController < Api::AbstractApiController
 
   def gen_route
-    pointA = {latitude:'31.27176', longitude:'30.00678'}
-    pointB = {latitude:'31.215639', longitude: '29.923051'}
+    pointA = {longitude:'31.27176', latitude:'30.00678'}
+    pointB = {longitude:'31.215639', latitude: '29.923051'}
     response = get_route(pointA, pointB)
-
     render json: response
+  end
 
+  def gen_trace
+    requestURL = "http://router.project-osrm.org/route/v1/driving/#{locations}?overview=full&geometries=geojson"
+    response = HTTParty.get(requestURL)
+    return get_geojson(JSON.parse(response.body))
   end
 
 
