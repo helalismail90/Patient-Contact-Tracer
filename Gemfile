@@ -10,6 +10,7 @@ gem "jetpacker"
 gem "mysql2", "~> 0.5.2"
 
 gem "dynomite"
+gem "httparty"
 
 # development and test groups are not bundled as part of the deployment
 group :development, :test do
