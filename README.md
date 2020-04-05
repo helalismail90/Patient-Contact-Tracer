@@ -4,25 +4,9 @@ This project aims to help identifying and/or predicting a possible foci for covi
 Given data for a patient or multiple patients, The Project has multiple components
 
 ## The following diagram explains movement for an individual between different places
-```mermaid
-graph LR
-
-Home{Home *Hot Spot*} -- Route 1 --> Work{Work *Hot Spot*}
-Work-- Route 2 -->Home
-Home -- Route 3 --> Gym(Gym)
-Gym --Route 4 --> Home
-Gym -- Route 5 --> Cafe{Cafe *Hot Spot*}
-Work --Route 6-->Cafe
-Home --Route 7-->Cafe
-Cafe -- Route 8-->Home
-Family's(Family's) --Route 9--> Home
-Home -- Route 10 -->Family's
-Work --Route 11 --> Family's
-Home --Route 12 -->SuperMarket(Super Market)
-SuperMarket --Route 13--> Home
-Home -- Route 14 --> Clinic{Clinic *Hot Spot*}
-Clinic -- Route 15 --> Home
-```
+<img src="https://raw.githubusercontent.com/helalismail90/Patient-Contact-Tracer/master/person-movement-diagram.png"  
+alt="Markdown Monster icon"  
+style="float: left; margin-right: 10px;" />
 
 
 # This project aims to help decision makers identify
