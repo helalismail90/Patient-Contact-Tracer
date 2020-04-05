@@ -2,7 +2,7 @@
 # Patient Contact Tracer
 
 This project aims to help identifying and/or predicting a possible foci for covid-19. 
-Given data for a patient or multiple patients, The Project has multiple components
+Given data for a patient or multiple patients.
 
 ## The following diagram explains movement for an individual between different places
 <img src="https://raw.githubusercontent.com/helalismail90/Patient-Contact-Tracer/master/person-movement-diagram.png"  
