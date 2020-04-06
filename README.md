@@ -5,7 +5,14 @@ This project aims to help identifying and/or predicting a possible foci for covi
 Given data for a patient or multiple patients.
 
 ## The following diagram explains movement for an individual between different places
-<img src="https://raw.githubusercontent.com/helalismail90/Patient-Contact-Tracer/master/person-movement-diagram.png"  
+<img src="https://raw.githubusercontent.com/helalismail90/Patient-Contact-Tracer/master/docs/person-movement-diagram.png"  
+alt="Markdown Monster icon"  
+style="float: left; margin-right: 10px;" />
+
+## The Expected Output given a case most visited locations
+All The Data being used is sampled "dummy" data for testing and demonstration purposes
+
+<img src="https://raw.githubusercontent.com/helalismail90/Patient-Contact-Tracer/master/docs/kepler.png"  
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
 
