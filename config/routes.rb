@@ -5,9 +5,7 @@ Jets.application.routes.draw do
 
     # ===== OSRM Routes Service =====
     namespace :routes do
-      get  "gen_route", to: "routes#gen_route"
       get  "gen_trace", to: "routes#gen_trace"
-
     end
 
   end

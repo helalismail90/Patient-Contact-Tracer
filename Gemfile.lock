@@ -220,6 +220,9 @@ GEM
     rake (13.0.1)
     recursive-open-struct (1.1.1)
     regexp_parser (1.7.0)
+    rgeo (2.1.1)
+    rgeo-geojson (2.1.1)
+      rgeo (>= 1.0.0)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -259,6 +262,7 @@ DEPENDENCIES
   mysql2 (~> 0.5.2)
   puma
   rack
+  rgeo-geojson
   rspec
   shotgun
 
