@@ -4,11 +4,11 @@ class Api::Routes::RoutesController < Api::AbstractApiController
 
   def gen_trace
     response = get_route(params[:locations])
-    write_to_file("/layers/#{Time.now}.json", response.to_json)
+    write_to_file("/layers/#{params[:case_id]}.json", response.to_json)
     render json: response
   end
 
-  
+
 
   private
 
