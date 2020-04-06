@@ -5,7 +5,14 @@ This project aims to help identifying and/or predicting a possible foci for covi
 Given data for a patient or multiple patients.
 
 ## The following diagram explains movement for an individual between different places
-<img src="https://raw.githubusercontent.com/helalismail90/Patient-Contact-Tracer/master/person-movement-diagram.png"  
+<img src="https://raw.githubusercontent.com/helalismail90/Patient-Contact-Tracer/master/docs/person-movement-diagram.png"  
+alt="Markdown Monster icon"  
+style="float: left; margin-right: 10px;" />
+
+## The Expected Output given a case most visited locations
+All The Data being used is sampled "dummy" data for testing and demonstration purposes
+
+<img src="https://raw.githubusercontent.com/helalismail90/Patient-Contact-Tracer/master/docs/kepler.png"  
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
 
@@ -23,10 +30,13 @@ style="float: left; margin-right: 10px;" />
 
 An API that takes a patients most visited locations as input [ home, work, gym. .. etc ] and generates possible trace for the patient movement through routes between those locations, generating geojson response.
 
-
+    GET <HOST-URL>/api/gen_trace?case_id=<CASE-ID>&locations=locALng,LocAlat;LocBLng,LocBLat;LocCLng,LocCLat
+    
 
 ## Patient(s) Polygon 
-A CSV output file that can be feed into Kepler.gl generating a visualization [ Heat Map ] with patients hotspots and most frequently used routes.
+A geojson output file is generated everytime the /gen_trace API is called 
+The geojosn file can be feed into Kepler.gl generating a visualization with patients hotspots and most frequently used routes.
+
 
 # Environment Setup
 
