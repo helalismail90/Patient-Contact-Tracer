@@ -31,12 +31,15 @@ style="float: left; margin-right: 10px;" />
 An API that takes a patients most visited locations as input [ home, work, gym. .. etc ] and generates possible trace for the patient movement through routes between those locations, generating geojson response.
 
     GET <HOST-URL>/api/gen_trace?case_id=<CASE-ID>&locations=locALng,LocAlat;LocBLng,LocBLat;LocCLng,LocCLat
-    
+
+Sample Response File : https://github.com/helalismail90/Patient-Contact-Tracer/blob/master/docs/sample_response.json
+
 
 ## Patient(s) Polygon 
 A geojson output file is generated everytime the /gen_trace API is called 
 The geojosn file can be feed into Kepler.gl generating a visualization with patients hotspots and most frequently used routes.
 
+	Output files gets generated in /public/layers/<CASE_ID>.json
 
 # Environment Setup
 
