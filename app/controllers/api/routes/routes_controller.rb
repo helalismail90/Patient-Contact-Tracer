@@ -8,12 +8,7 @@ class Api::Routes::RoutesController < Api::AbstractApiController
     render json: response
   end
 
-  def gen_trace_to_file
-    response = get_route(params[:locations])
-    path = write_to_file("/layers/#{Time.now}.json", response.to_json)
-    redirect_to path
-  end
-
+  
 
   private
 
