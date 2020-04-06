@@ -13,6 +13,7 @@ tmp
 
 /public/packs
 /public/packs-test
+/public/layers
 /node_modules
 /yarn-error.log
 yarn-debug.log*

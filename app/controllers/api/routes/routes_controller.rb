@@ -4,14 +4,25 @@ class Api::Routes::RoutesController < Api::AbstractApiController
 
   def gen_trace
     response = get_route(params[:locations])
-    File.open("public/layers/#{Time.now}.json","w") do |f|
-      f.write(response.to_json)
-    end
+    write_to_file("/layers/#{Time.now}.json", response.to_json)
     render json: response
+  end
+
+  def gen_trace_to_file
+    response = get_route(params[:locations])
+    path = write_to_file("/layers/#{Time.now}.json", response.to_json)
+    redirect_to path
   end
 
 
   private
+
+  def write_to_file(filePath, content)
+    File.open("public/#{filePath}","w") do |f|
+      f.write(content)
+    end
+    return "#{filePath}"
+  end
 
   def get_route(locations)
     requestURL = "http://router.project-osrm.org/route/v1/driving/#{locations}?overview=full&geometries=geojson"
